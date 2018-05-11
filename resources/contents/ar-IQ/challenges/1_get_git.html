@@ -1,70 +1,57 @@
-<div id="challenge-desc" class="chal-goal blue-border border-box">
-    <p>Install Git on your computer and configure your name and email.</p>
+<div dir='rtl' id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>نصب Git على حاسوبك واضبط اسمك وعنوان بريدك الالكتروني.</p>
 </div>
 
-<div class="chal-background light-blue solid-box">
+<div dir='rtl' class="chal-background light-blue solid-box">
     <h2>Git</h2>
-    <p>Git is free <strong>open source software</strong> (the <a href="https://github.com/git/git">source code is
-        public</a>) written by Linus Torvalds who also wrote the Linux operating system's kernel. </p>
-    <p>Git is a program for keeping track of changes over time, known in programming as <strong>version control</strong>.
-        If you've used a track changes feature in a text editing software then you're already familiar with the concept!
+    <p>Git هو <strong>برنامج مفتوح المصدر</strong> مجاني (مصدر الشفرة ل <a href="https://github.com/git/git"> مفتوح الرخصة. كتب من قبل Linus Torvalds الذي أيضا كتب شفرة ال Kernel لنظام التشغيل ال Linux </p>
+    <p>Git هو برنامج لتعقب التغييرات على مدة الزمن, هذا يعرف في عالم البرمجة ب <strong>إدارة الاصدارات</strong>
+اذا كنت قد تتبعت التغييرات في احد برامج تحرير النص اذا فهذا المفهوم مألوف بالنسبة لك!
     </p>
 </div>
 
-<div class="chal-step blue-border border-box">
-    <h3>Install Git</h3>
-    <p>We recommend installing Git on your computer by downloading the <a href="https://desktop.github.com">GitHub
-        Desktop</a> app. We'll not use the desktop app in Git-it (we're learning terminal!) but it includes Git and is
-        the easiest way to install Git on all platforms in the same way.</p>
+<div dir='rtl' dir='rtl' class="chal-step blue-border border-box">
+    <h3>تنصيب Git</h3>
+    <p>نحن نوصي بتنصيب Git على حاسوبك عن طريق تحميل برنامج <a href="https://desktop.github.com">GitHub Desktop</a>. لن نستخدم هذا البرنامج في Git-it لأننا نتعلم ال terminal, ولكن هذا البرنامج يحتوي على Git أصلا وهو اسهل طريقة لتنصيبها على جميع أنظمة التشغيل.</p>
 
     <ul>
-        <li><strong>Windows</strong>: Use the <strong>Git Shell</strong> for your terminal.</li>
-        <li><strong>Mac</strong>: Open GitHub Desktop and from Preferences, select the command line tools install. Use
-            the <strong>terminal</strong> app as your terminal.
+        <li><strong>Windows</strong>: استخدم <strong>Git Shell</strong> ك terminal</li>
+        <li><strong>Mac</strong>: افتح GitHub Desktop ومن قائمة ال Preferences, اضغط على خيار command line tools install. استخدم <strong>terminal</strong> ك ال terminal.
         </li>
     </ul>
 
-    <p>Already have Git or not sure? Type <code>git --version</code> in your terminal and if it returns a version number
-        higher than <code>1.7.10</code>, you're set! For more information, visit the <a href="http://git-scm.com">Git
-            website</a>.</p>
+    <p>لديك Git أصلا او لست متاكدا؟ اكتب <code dir='ltr' dir='ltr'>git --version</code> في ال terminal. اذا ظهر رقم اصدار <code dir='ltr' dir='ltr'>1.7.10</code>, او احدث, فانك جاهز. لمعلومات أخرى, اذهب الى <a href="http://git-scm.com">Git website</a>.</p>
 </div>
 
-<div class="chal-background light-blue solid-box">
-    <h2>Git Software</h2>
-    <p>The GitHub Desktop app can do a lot of things with Git but not all, which is why learning the terminal is
-        important. But once you've got that down, you'll be glad to have the desktop app because it organizes your
-        project's information more visually, like the GitHub website.</p>
+<div dir='rtl' dir='rtl' class="chal-background light-blue solid-box">
+    <h2>Git برنامج</h2>
+    <p>برنامج GitHub Desktop يستطيع عمل الكثير من الأشياء مع Git ولكن ليس كل شيء, لهذا فان تعلم ال terminal مهم. لكن عندما تنتهي من ذلك, ستسعد لكونك تملك برنامج سطح المكتب لكونه يرتب معلومات مشاريعك بطريقة حسنة للنظر, مثل موقع GitHub.</p>
 
-    <p>Git on its own isn't like other programs on your computer. You'll likely not see an icon on your desktop, but it
-        will always be available to you and you'll be able to access it at anytime from your terminal or Git desktop
-        applications.</p>
+    <p>Git وحدها ليست مثل باقي البرامج على حاسوبك. على الأرجح انك لن ترة ايقونة على سطح المكتب, ولكنها موجودة ويمكنك وصولها في أي وقت عن طريق ال terminal او احد برامج Git.</p>
 </div>
 
-<div class="chal-step blue-border border-box">
-    <h3>Configure Git</h3>
-    <p>Once GitHub Desktop (and therefore Git) is installed, open your <strong>terminal</strong>.
-        You can verify that Git is really there by typing:</p>
+<div dir='rtl' dir='rtl' class="chal-step blue-border border-box">
+    <h3>ضبط Git</h3>
+    <p>بعد تنصيب GitHub Desktop, ومعها Git, افتح ال <strong>terminal</strong>. يمكن التحقق من كون Git منصبة بإصدار الايعاز:</p>
 
-    <p><code class="shell">git --version </code></p>
+    <p><code dir='ltr' class="shell">git --version </code></p>
 
-    <p>This will return the version of Git on your computer and look something like this:</p>
+    <p>هذا سيرجع اصدار Git على حاسوبك. النتيجة ستشبه:</p>
 
-    <p><code class="comment">git version 1.9.1</code></p>
+    <p><code dir='ltr' class="comment">git version 1.9.1</code></p>
 
-    <p>Next, configure Git so it knows to associate your work to you:</p>
-    <p>Set your name:</p>
-    <p><code class="shell">git config --global user.name "Your Name"</code></p>
-    <p>Now set your email:</p>
-    <p><code class="shell">git config --global user.email "youremail@example.com"</code></p>
+    <p>لاحقا, اضبط Git لكي تعرف ان تربط عملك معك</p>
+    <p>اضبط اسمك:</p>
+    <p><code dir='ltr' class="shell">git config --global user.name "Your Name"</code></p>
+    <p>الآن اضبط عنوان بريدك الالكتروني:</p>
+    <p><code dir='ltr' class="shell">git config --global user.email "youremail@example.com"</code></p>
 
-    <p>You're done with your first challenge! Click the 'Verify' button to check the challenge.</p>
+    <p>لقد انتهيت من اول مهمة لك! اضغط على زر "تحقق" لتتحقق من المهمة</p>
 </div>
 
 {{{ verify_button }}}
 
-<div class="chal-tip grey-border border-box">
-    <h3>Dollar Signs in Code Documentation</h3>
-    <p>Dollar signs <code>$</code> are often used in programming documentation to signify that the line is <strong>command
-        line</strong> code (see the code snippets above). You don't actually type the <code>$</code> in though, only
-        type what comes after.</p>
+<div dir='rtl' dir='rtl' class="chal-tip grey-border border-box">
+    <h3>علامات الدولار في موثقات البرمجة</h3>
+    <p>علامات الدولار <code dir='ltr'>$</code> تستخدم عادة في موثقات البرمجة لكي تنبه ان هذا السطر يكتب في ال <strong>command line</strong>. انظهر الى الشفرات السابقة. عندما تنقل السطر لا تكتب علامة ال <code dir='ltr'>$</code>. انقل فقط ما يليها</p>
 </div>
