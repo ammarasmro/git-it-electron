@@ -1,68 +1,61 @@
-<div id="challenge-desc" class="chal-goal blue-border border-box">
-    <p>Create a file in your new repository, add something to that file and commit that change with Git.</p>
+<div dir='rtl' id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>انشئ ملف في مستودع البيانات الجديد, غير محتوى الملف, و ثبت التغيير بواسطة Git</p>
 </div>
 
-<div class="chal-background light-blue solid-box">
-    <h2>Commits</h2>
-    <p>Commits are core to using Git. They are the moments in which you save and describe the work you've done. They are
-        the ticks in the timeline of your project's history.</p>
+<div dir='rtl' class="chal-background light-blue solid-box">
+    <h2>تثبيت التعديلات</h2>
+    <p>التعديلات هي لب ال Git. هي تمثل اللحظات التي تخزن وتوصف العمل الذي قمت به. هي العلامات في الجدول الزمني لتاريخ مشروعك.</p>
 </div>
 
-<div class="chal-step blue-border border-box">
-    <h3>Create a New File</h3>
-    <p>Now that you've got a repository started let's add a file to it.</p>
-    <p>Open your text editor and create a new empty file. Now write a little bit of text, perhaps type "Hello!", and
-        save the file as 'readme.txt' in the 'hello-world' folder you created in the last challenge.</p>
+<div dir='rtl' class="chal-step blue-border border-box">
+    <h3>أنشئ ملفا جديدا</h3>
+    <p>لديك الأن مستودع بيانات جاهز, دعنا نظيف بعض الملفات لها</p>
+    <p>افتح محرر النصوص وانشئ ملفا خاليا. اكتب بعض الكتابات, مثلا "مرحبا!", واخزن الملف باسم “readme.txt” في المجلد “hello-world” الذي انشأته في المهمة السابقة.</p>
 </div>
 
-<div class="chal-step blue-border border-box">
-    <h3>Check Status + Add and Commit Changes</h3>
-    <p>Next check the <strong>status</strong> of your repository to find out if there have been changes. You know you
-        have changed something, but does Git?</p>
+<div dir='rtl' class="chal-step blue-border border-box">
+    <h3>تحقق من الحالة + أضف التعديل وثبته</h3>
+    <p>تحقق من ال <strong>الحالة</strong> لمستودع البيانات لتكتشف اذا كان هناك تعديلات. انت تعرف إنك قد عدلت شيئا ما ولكن هل Git تعرف أيضا؟</p>
 
-    <p>Make sure you're still within your 'hello-world' directory when you're running these commands. Use Git to see
-        what changed in your repository:</p>
+    <p>تأكد انك ما زلت ضمن مجلد “hello-world” عندما تعطي هذه الايعازات. استخدم Git لترى من تغير في مستودعة بياناتك.</p>
 
-    <p>First, check the status:</p>
-    <p><code class="shell">git status</code></p>
-    <p>Git should tell you that a file has been added.</p>
+    <p>أولا, تحقق من الحالة:</p>
+    <p><code dir='ltr' class="shell">git status</code></p>
+    <p>Git ستخبرك ان ملفا قد اضيف</p>
 
-    <p>Then <strong>add</strong> the file you just created so that it becomes a part of the changes you will <strong>commit</strong>
-        (aka save) with Git:</p>
-    <p><code class="shell">git add readme.txt</code></p>
+    <p>ثم أضف الملف التي أنشأته لكي يصبح جزءا من التعديلات التي سوف تثبتها باستخدام Git</p>
+    <p><code dir='ltr' class="shell">git add readme.txt</code></p>
 
-    <p>Finally, <strong>commit</strong> those changes to the repository's history with a
-        short (m) message describing the updates.</p>
-    <p><code class="shell">git commit -m "Created readme"</code></p>
+    <p>وأخيرا, ثبت هذه التعديلات في تاريخ مستودع البيانات مع رسالة قصيرة تصف التغيير</p>
+    <p><code dir='ltr' class="shell">git commit -m "Created readme"</code></p>
 </div>
 
-<div class="chal-step blue-border border-box">
-    <h3>Step: Make More Changes</h3>
-    <p>Now add another line to 'readme.txt' and save the file again.</p>
+<div dir='rtl' class="chal-step blue-border border-box">
+    <h3>خطوة: اصنع تغييرات اخرى</h3>
+    <p>الان أضف سطرا اخر الى “readme.txt” واخزن الملف مرة اخرى</p>
 
-    <p>In terminal, you can view the <strong>diff</strong>erence between the file now and how it was at your last
-        commit. </p>
+    <p>في ال terminal, يمكنك تفحص الفروقات في الملف بين حالته الحالية والسابقة </p>
 
-    <p>Tell Git to show you the <strong>diff</strong>:</p>
-    <p><code class="shell">git diff</code></p>
+    <p>اخبر Git بان تظهر لك الفروقات:</p>
+    <p><code dir='ltr' class="shell">git diff</code></p>
 
-    <p>Now with what you just learned above, commit this latest change.</p>
+    <p>الان مع ما تعلمته, ثبت التعديل الاخير</p>
 </div>
 
 {{{ verify_directory_button }}}
 
-<div class="chal-tip grey-border border-box">
+<div dir='rtl' class="chal-tip grey-border border-box">
     <ul class="no-list-style">
-        <li><strong>Check status of changes to a repository</strong></li>
-        <li><code class="shell">git status</code></li>
-        <li><strong>View changes to files</strong></li>
-        <li><code class="shell">git diff</code></li>
-        <li><strong>Add a file's changes to be committed</strong></li>
-        <li><code class="shell">git add &#60;FILENAME&#62;</code></li>
-        <li><strong>To add all files changes</strong></li>
-        <li><code class="shell">git add .</code></li>
-        <li><strong>To commit (aka save) the changes you've added with a short message describing the changes</strong>
+        <li><strong>تحقق من حالة التغييرات في مستودع البيانات</strong></li>
+        <li><code dir='ltr' class="shell">git status</code></li>
+        <li><strong>تفحص التغييرات في الملفات</strong></li>
+        <li><code dir='ltr' class="shell">git diff</code></li>
+        <li><strong>اضف التغييرات التي سوف تثبت</strong></li>
+        <li><code dir='ltr' class="shell">git add &#60;FILENAME&#62;</code></li>
+        <li><strong>لكي تضيف جميع التغييرات في جميع الملفات</strong></li>
+        <li><code dir='ltr' class="shell">git add .</code></li>
+        <li><strong>لتثبت, او تخزن, التعديلات مع رسالة قصيرة</strong>
         </li>
-        <li><code class="shell">git commit -m "your commit message"</code></li>
+        <li><code dir='ltr' class="shell">git commit -m "your commit message"</code></li>
         <ul>
 </div>
